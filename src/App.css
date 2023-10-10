@@ -59,3 +59,7 @@ li {
 li:last-of-type {
   margin: 0;
 }
+
+button {
+  text-transform: none !important;
+}

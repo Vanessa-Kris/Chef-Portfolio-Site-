@@ -1,4 +1,4 @@
-import { Box, Typography, Divider } from "@mui/material";
+import { Box, Typography, Divider, Button } from "@mui/material";
 import React from "react";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
@@ -39,17 +39,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            E-commerce website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://stunnersgalleria.com"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Stunners Galleria
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
 
         <li className="listitems">
@@ -58,17 +50,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Blogging Website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://blog.stunnersgalleria.com/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Stunners Galleria Blog
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
 
         <li className="listitems">
@@ -77,17 +61,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Corporate Website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://smswithoutborders.com/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            SMS Without Borders
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -95,17 +71,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            User analytics board
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://smswithoutborders.com:8080/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            SMS Without Borders Open Telemetry
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -113,17 +81,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Messaging Website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://github.com/deku-messaging/Deku-Web-FE"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Afkanerd Deku Messaging
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
 
         <li className="listitems">
@@ -132,17 +92,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            E-learning Platform
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Career Navigator Academy
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -150,17 +102,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Blogging web
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://sheba-chris.netlify.app"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Sheba's Blog
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
       {/*  */}
@@ -178,17 +122,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Resturant website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://aroma-kitchen.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Aroma Kitchen
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
 
         <li className="listitems">
@@ -197,17 +133,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Portfolio management website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://impact-investment.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Impact Investment
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -215,17 +143,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Developer Portfolio website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://vanessa-kris.github.io/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            DevFolio
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -233,17 +153,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Corporate website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://afkanerd.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Vanessa Tech
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -251,17 +163,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Portfolio website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://vanessachristopher.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Vanessa Christopher
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
 
@@ -280,17 +184,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Resturant website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://aroma-kitchen.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Aroma Kitchen
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
 
         <li className="listitems">
@@ -299,35 +195,24 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Portfolio management website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://impact-investment.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Impact Investment
+          <Button variant="outlined">Buy Now</Button>{" "}
+          <Typography variant="h5" sx={{ fontSize: "20px" }}>
+            Full Chicken
           </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
             src="https://img.freepik.com/free-photo/sausage-fried-rice-with-tomatoes-carrots-shiitake-mushrooms-plate_1150-27184.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
             alt=""
           />
+
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Developer Portfolio website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://vanessa-kris.github.io/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            DevFolio
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -335,17 +220,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Corporate website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://afkanerd.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Vanessa Tech
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -353,17 +230,9 @@ export default function Menu() {
             alt=""
           />
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Portfolio website
+            Full Chicken
           </Typography>
-          <Typography
-            component="a"
-            target="_blank"
-            rel="noreferrer noopener"
-            href="https://vanessachristopher.netlify.app/"
-            sx={{ color: "#fff", fontSize: "25px" }}
-          >
-            Vanessa Christopher
-          </Typography>
+          <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
     </Box>
