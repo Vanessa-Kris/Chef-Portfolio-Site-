@@ -2,6 +2,7 @@ import { Box, Grid, Typography, Button } from "@mui/material";
 import { FaAnglesRight } from "react-icons/fa6";
 import React from "react";
 import Menu from "../components/Menu";
+import SimpleMap from "../components/Map";
 
 export default function MyFood() {
   return (
@@ -159,6 +160,32 @@ export default function MyFood() {
       </Box>
 
       <Menu />
+      {/*  */}
+      <Box
+        sx={{
+          px: { md: 10, sm: 7, xs: 3 },
+          bgcolor: "#ebe4e7",
+          py: { md: 15, sm: 7, xs: 3 },
+        }}
+      >
+        <Typography align="center" variant="h2" sx={{ pb: 10 }}>
+          Visit Us
+        </Typography>
+
+        <SimpleMap />
+      </Box>
+      {/*  */}
+      <Box
+        sx={{
+          px: { md: 10, sm: 7, xs: 3 },
+          bgcolor: "#ebe4e7",
+          py: { md: 15, sm: 7, xs: 3 },
+        }}
+      >
+        <Typography align="center" variant="h2" sx={{ pb: 10 }}>
+          Meet The Team
+        </Typography>
+      </Box>
     </Box>
   );
 }

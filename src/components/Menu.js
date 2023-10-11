@@ -41,6 +41,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
 
@@ -52,6 +54,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
 
@@ -63,6 +67,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -73,6 +79,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -83,6 +91,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
 
@@ -94,6 +104,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -104,6 +116,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
@@ -124,6 +138,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
 
@@ -135,6 +151,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -145,6 +163,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -155,6 +175,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -165,6 +187,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
@@ -186,6 +210,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
 
@@ -197,11 +223,9 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>{" "}
-          <Typography variant="h5" sx={{ fontSize: "20px" }}>
-            Full Chicken
-          </Typography>
-          <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
           <img
@@ -212,6 +236,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -222,6 +248,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
         <li className="listitems">
@@ -232,6 +260,8 @@ export default function Menu() {
           <Typography variant="h5" sx={{ fontSize: "20px" }}>
             Full Chicken
           </Typography>
+          <Typography variant="p">2000</Typography>
+          <br />
           <Button variant="outlined">Buy Now</Button>
         </li>
       </ul>
