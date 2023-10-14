@@ -8,21 +8,12 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
-const navItems = [
-  "Home",
-  "Biography",
-  "My Food By Hilda",
-  "Masterclass",
-  "Contact",
-];
 
 function Nav(props) {
   const { window } = props;
@@ -39,13 +30,31 @@ function Nav(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem>
+          <Typography component="a" href="/">
+            Home
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography component="a" href="/biography">
+            Biography
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography component="a" href="/myfoodbyhilda">
+            My Food By Hilda{" "}
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography component="a" href="/masterclass">
+            Masterclass
+          </Typography>
+        </ListItem>
+        <ListItem>
+          <Typography component="a" href="/contact">
+            Contact
+          </Typography>
+        </ListItem>
       </List>
     </Box>
   );
@@ -75,11 +84,21 @@ function Nav(props) {
             Hilda Baci
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
-            ))}
+            <Button component="a" href="/" sx={{ color: "#fff" }}>
+              Home
+            </Button>
+            <Button component="a" href="/biography" sx={{ color: "#fff" }}>
+              Biography
+            </Button>
+            <Button component="a" href="/myfoodbyhilda" sx={{ color: "#fff" }}>
+              My Food By Hilda
+            </Button>
+            <Button component="a" href="/masterclass" sx={{ color: "#fff" }}>
+              Mater Class
+            </Button>
+            <Button component="a" href="/contact" sx={{ color: "#fff" }}>
+              Contact
+            </Button>
           </Box>
         </Toolbar>
       </AppBar>
@@ -95,7 +114,7 @@ function Nav(props) {
           sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
+              // boxSizing: "border-box",
               width: drawerWidth,
             },
           }}

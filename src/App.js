@@ -9,6 +9,7 @@ import PageNotFound from "./pages/PageNotFound.";
 import CssBaseline from "@mui/material/CssBaseline";
 import Nav from "./components/Nav";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Footer from "./components/Footer";
 
 let theme = createTheme({
   palette: {
@@ -29,7 +30,7 @@ function App() {
       element: <Landing />,
     },
     {
-      path: "/about",
+      path: "/biography",
       element: <Biography />,
     },
     {
@@ -55,6 +56,7 @@ function App() {
         <CssBaseline />
         <Nav />
         <RouterProvider router={router} />
+        <Footer />
       </ThemeProvider>
     </>
   );

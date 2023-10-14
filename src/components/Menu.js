@@ -9,7 +9,7 @@ export default function Menu() {
   const { scrollXProgress } = useScroll({ container: ref });
   return (
     <Box sx={{ m: { md: 15, xs: 1 }, pt: 0 }}>
-      <Typography align="center" variant="h2" sx={{ pb: 10 }}>
+      <Typography align="center" variant="h2" sx={{ pb: 10, fontWeight: 500 }}>
         Menu
       </Typography>
 

@@ -1,8 +1,8 @@
 import { Box, Grid, Typography, Button } from "@mui/material";
-import { FaAnglesRight } from "react-icons/fa6";
 import React from "react";
 import Menu from "../components/Menu";
 import SimpleMap from "../components/Map";
+import { FaPhone, FaWhatsapp } from "react-icons/fa6";
 
 export default function MyFood() {
   return (
@@ -118,8 +118,12 @@ export default function MyFood() {
           py: { md: 15, sm: 7, xs: 3 },
         }}
       >
-        <Typography align="center" variant="h2" sx={{ pb: 10 }}>
-          About My Food By Hila
+        <Typography
+          align="center"
+          variant="h2"
+          sx={{ pb: 10, fontWeight: 500 }}
+        >
+          About My Food By Hilda
         </Typography>
 
         <Grid container sx={{ px: { md: 10, sm: 7, xs: 5 } }}>
@@ -168,11 +172,37 @@ export default function MyFood() {
           py: { md: 15, sm: 7, xs: 3 },
         }}
       >
-        <Typography align="center" variant="h2" sx={{ pb: 10 }}>
+        <Typography
+          align="center"
+          variant="h2"
+          sx={{ pb: 10, fontWeight: 500 }}
+        >
           Visit Us
         </Typography>
 
         <SimpleMap />
+      </Box>
+      {/*  */}
+      <Box
+        align="center"
+        sx={{
+          px: { md: 10, sm: 7, xs: 3 },
+
+          py: { md: 15, sm: 7, xs: 7 },
+        }}
+      >
+        <Typography align="center" variant="p" sx={{ py: 7 }}>
+          Want a special seat?
+        </Typography>
+        <Typography align="center" variant="h2" sx={{ py: 5, fontWeight: 500 }}>
+          Make A Reservation
+        </Typography>
+        <Button variant="contained" sx={{ p: 2 }}>
+          <FaPhone style={{ marginRight: 10 }} /> Place Call{" "}
+        </Button>
+        <Button variant="contained" sx={{ p: 2, ml: 3 }}>
+          <FaWhatsapp style={{ marginRight: 10 }} /> Whatsapp
+        </Button>
       </Box>
       {/*  */}
       <Box
@@ -182,9 +212,47 @@ export default function MyFood() {
           py: { md: 15, sm: 7, xs: 3 },
         }}
       >
-        <Typography align="center" variant="h2" sx={{ pb: 10 }}>
+        <Typography
+          align="center"
+          variant="h2"
+          sx={{ pb: 10, fontWeight: 500 }}
+        >
           Meet The Team
         </Typography>
+        <Grid container columnSpacing={4}>
+          <Grid item md={3} sm={3} xs={12}>
+            <Box
+              component="img"
+              src="https://img.freepik.com/free-photo/young-smiling-afro-american-cook-chef-uniform-crosses-arms-isolated-orange-wall_141793-33424.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
+              sx={{ width: "100%" }}
+            />
+            <Typography variant="h5">Chef Lorem</Typography>
+          </Grid>
+          <Grid item md={3} sm={3} xs={12}>
+            <Box
+              component="img"
+              src="https://img.freepik.com/free-photo/view-chef-working-kitchen_23-2149728026.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
+              sx={{ width: "100%" }}
+            />
+            <Typography variant="h5">Chef Lorem</Typography>
+          </Grid>
+          <Grid item md={3} sm={3} xs={12}>
+            <Box
+              component="img"
+              src="https://img.freepik.com/free-photo/young-smiling-afro-american-cook-chef-uniform-holds-cake-plate-points-with-hand-isolated-white-wall_141793-33438.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
+              sx={{ width: "100%" }}
+            />
+            <Typography variant="h5">Chef Lorem</Typography>
+          </Grid>
+          <Grid item md={3} sm={3} xs={12}>
+            <Box
+              component="img"
+              src="https://img.freepik.com/free-photo/young-african-american-female-posing-yellow_181624-52051.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
+              sx={{ width: "100%" }}
+            />
+            <Typography variant="h5">Chef Lorem</Typography>
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );
