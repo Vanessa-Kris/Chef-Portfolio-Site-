@@ -15,7 +15,6 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        bgcolor: "#673147",
         color: "#fff",
         py: 3,
       }}
@@ -26,6 +25,7 @@ export default function Footer() {
         spacing={4}
         alignItems="center"
         justifyContent="center"
+        display="flex"
       >
         <Grid item md={3} xs={12}>
           <Typography variant="h4">Hilda Baci</Typography>
@@ -37,7 +37,13 @@ export default function Footer() {
             <Typography variant="body">+234 123 457 900</Typography>
           </Box>
         </Grid>
-        <Grid item md={4} xs={12} justifyContent="flex-end" display="flex">
+        <Grid
+          item
+          md={4}
+          xs={12}
+          justifyContent={{ md: "flex-end", xs: "flex-start" }}
+          display="flex"
+        >
           <Box>
             <List>
               <Typography variant="h6">
@@ -51,15 +57,21 @@ export default function Footer() {
             </List>
           </Box>
         </Grid>
-        <Grid item md={4} xs={12} justifyContent="flex-end" display="flex">
+        <Grid
+          item
+          md={4}
+          xs={12}
+          justifyContent={{ md: "flex-end", xs: "center" }}
+          display="flex"
+        >
           <Box sx={{ display: "flex" }}>
-            <FaFacebook style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaInstagram style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaLinkedin style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaTiktok style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaXTwitter style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaYoutube style={{ fontSize: "30px", marginRight: 17 }} />
-            <FaRegEnvelope style={{ fontSize: "30px", marginRight: 17 }} />
+            <FaFacebook style={{ fontSize: "28px", margin: 10 }} />
+            <FaInstagram style={{ fontSize: "28px", margin: 10 }} />
+            <FaLinkedin style={{ fontSize: "28px", margin: 10 }} />
+            <FaTiktok style={{ fontSize: "28px", margin: 10 }} />
+            <FaXTwitter style={{ fontSize: "28px", margin: 10 }} />
+            <FaYoutube style={{ fontSize: "28px", margin: 10 }} />
+            <FaRegEnvelope style={{ fontSize: "28px", margin: 10 }} />
           </Box>
         </Grid>
       </Grid>

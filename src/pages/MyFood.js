@@ -142,7 +142,7 @@ export default function MyFood() {
             md={6}
             sm={6}
             xs={12}
-            sx={{ p: { md: 0, sm: 3, xs: 2 } }}
+            sx={{ p: { md: 0, sm: 3, xs: 2 }, color: "#424242" }}
           >
             <Typography variant="h5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -191,7 +191,7 @@ export default function MyFood() {
           py: { md: 15, sm: 7, xs: 7 },
         }}
       >
-        <Typography align="center" variant="p" sx={{ py: 7 }}>
+        <Typography align="center" variant="p" sx={{ py: 7, color: "#424242" }}>
           Want a special seat?
         </Typography>
         <Typography align="center" variant="h2" sx={{ py: 5, fontWeight: 500 }}>
@@ -226,7 +226,9 @@ export default function MyFood() {
               src="https://img.freepik.com/free-photo/young-smiling-afro-american-cook-chef-uniform-crosses-arms-isolated-orange-wall_141793-33424.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
               sx={{ width: "100%" }}
             />
-            <Typography variant="h5">Chef Lorem</Typography>
+            <Typography variant="h5" sx={{ pt: 3, color: "#424242" }}>
+              Chef Lorem
+            </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={12}>
             <Box
@@ -234,7 +236,9 @@ export default function MyFood() {
               src="https://img.freepik.com/free-photo/view-chef-working-kitchen_23-2149728026.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
               sx={{ width: "100%" }}
             />
-            <Typography variant="h5">Chef Lorem</Typography>
+            <Typography variant="h5" sx={{ pt: 3, color: "#424242" }}>
+              Chef Lorem
+            </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={12}>
             <Box
@@ -242,7 +246,9 @@ export default function MyFood() {
               src="https://img.freepik.com/free-photo/young-smiling-afro-american-cook-chef-uniform-holds-cake-plate-points-with-hand-isolated-white-wall_141793-33438.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
               sx={{ width: "100%" }}
             />
-            <Typography variant="h5">Chef Lorem</Typography>
+            <Typography variant="h5" sx={{ pt: 3, color: "#424242" }}>
+              Chef Lorem
+            </Typography>
           </Grid>
           <Grid item md={3} sm={3} xs={12}>
             <Box
@@ -250,7 +256,9 @@ export default function MyFood() {
               src="https://img.freepik.com/free-photo/young-african-american-female-posing-yellow_181624-52051.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
               sx={{ width: "100%" }}
             />
-            <Typography variant="h5">Chef Lorem</Typography>
+            <Typography variant="h5" sx={{ pt: 3, color: "#424242" }}>
+              Chef Lorem
+            </Typography>
           </Grid>
         </Grid>
       </Box>

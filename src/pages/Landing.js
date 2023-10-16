@@ -40,7 +40,7 @@ export default function Landing() {
             md={6}
             sm={6}
             xs={12}
-            sx={{ p: { md: 0, sm: 3, xs: 2 } }}
+            sx={{ p: { md: 0, sm: 3, xs: 2 }, color: "#424242" }}
           >
             <Typography variant="h5">
               Introducing Hilda Baci, an extraordinary chef who holds the world
@@ -63,7 +63,7 @@ export default function Landing() {
         </Grid>
       </Box>
       {/* Third */}
-      <Box sx={{ bgcolor: "#ebe4e7" }}>
+      <Box className="third">
         <Grid
           container
           columnSpacing={2}
@@ -76,7 +76,10 @@ export default function Landing() {
               sx={{ width: { md: "90%", sm: "90%", xs: "90%" } }}
               src="https://img.freepik.com/premium-photo/buffet-table-with-food-it-including-chicken-pork-vegetables_664601-3576.jpg?size=626&ext=jpg&ga=GA1.1.1563347392.1696364341&semt=sph"
             />
-            <Button variant="outlined" sx={{ p: 2, mt: 3 }}>
+            <Button
+              variant="outlined"
+              sx={{ p: 2, mt: 3, mb: { md: 0, xs: 5 } }}
+            >
               My Food By Hilda <FaAnglesRight style={{ marginLeft: 20 }} />
             </Button>
           </Grid>
@@ -86,7 +89,12 @@ export default function Landing() {
               sx={{ width: { md: "90%", sm: "90%", xs: "90%" } }}
               src="https://img.freepik.com/free-photo/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food_1150-26411.jpg?size=626&ext=jpg&ga=GA1.2.1563347392.1696364341&semt=sph"
             />
-            <Button variant="outlined" sx={{ p: 2, mt: 3 }}>
+            <Button
+              component="a"
+              href="/hilda's-recipies"
+              variant="outlined"
+              sx={{ p: 2, mt: 3 }}
+            >
               Hilda's Recipes <FaAnglesRight style={{ marginLeft: 20 }} />
             </Button>
           </Grid>
@@ -111,7 +119,7 @@ export default function Landing() {
             md={6}
             sm={6}
             xs={12}
-            sx={{ p: { md: 4, sm: 3, xs: 2 } }}
+            sx={{ p: { md: 4, sm: 3, xs: 2 }, color: "#424242" }}
           >
             <Typography variant="h5">
               Throughout her illustrious career, Hilda has amassed a remarkable

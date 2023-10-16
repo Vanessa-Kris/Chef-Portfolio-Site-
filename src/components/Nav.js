@@ -12,8 +12,44 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Slide from "@mui/material/Slide";
 
 const drawerWidth = 240;
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
+HideOnScroll.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+
+HideOnScroll.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
 
 function Nav(props) {
   const { window } = props;
@@ -65,43 +101,49 @@ function Nav(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
-            Hilda Baci
-          </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button component="a" href="/" sx={{ color: "#fff" }}>
-              Home
-            </Button>
-            <Button component="a" href="/biography" sx={{ color: "#fff" }}>
-              Biography
-            </Button>
-            <Button component="a" href="/myfoodbyhilda" sx={{ color: "#fff" }}>
-              My Food By Hilda
-            </Button>
-            <Button component="a" href="/masterclass" sx={{ color: "#fff" }}>
-              Mater Class
-            </Button>
-            <Button component="a" href="/contact" sx={{ color: "#fff" }}>
-              Contact
-            </Button>
-          </Box>
-        </Toolbar>
-      </AppBar>
+      <HideOnScroll {...props}>
+        <AppBar component="nav">
+          <Toolbar>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            >
+              Hilda Baci
+            </Typography>
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Button component="a" href="/" sx={{ color: "#fff" }}>
+                Home
+              </Button>
+              <Button component="a" href="/biography" sx={{ color: "#fff" }}>
+                Biography
+              </Button>
+              <Button
+                component="a"
+                href="/myfoodbyhilda"
+                sx={{ color: "#fff" }}
+              >
+                My Food By Hilda
+              </Button>
+              <Button component="a" href="/masterclass" sx={{ color: "#fff" }}>
+                Mater Class
+              </Button>
+              <Button component="a" href="/contact" sx={{ color: "#fff" }}>
+                Contact
+              </Button>
+            </Box>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
       <nav>
         <Drawer
           container={container}
